@@ -101,5 +101,5 @@ target6.y=0
 version=3.0.0
 width=1550
 world.lastInstantiated=flappysworld
-xPosition=255
-yPosition=84
+xPosition=176
+yPosition=97
