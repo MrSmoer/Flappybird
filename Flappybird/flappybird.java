@@ -67,7 +67,7 @@ public class flappybird extends Actor
     }
     //Zeigt Score an
     public void score(){
-        getWorld().showText("Score:asdf "+score, 60, 22);
+        getWorld().showText("Score: "+score, 60, 22);
     }
     //Spawnt Röhren
     public void spawnTubes(){
