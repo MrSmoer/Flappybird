@@ -29,6 +29,7 @@ public class flappybird extends Actor
         spawnTubes();
         score();
         checkHealth();
+        //test
     } 
     public void count(){
         takt++;
