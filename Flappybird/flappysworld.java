@@ -7,10 +7,14 @@ public class flappysworld extends World
         //Gameover game = new Gameover(); 
         bckgrnd background = new bckgrnd();
         flappybird flap = new flappybird(); 
-        HealthPoints hp = new HealthPoints();
+        HealthPoints hp0 = new HealthPoints(0);
+        HealthPoints hp1 = new HealthPoints(1);
+        HealthPoints hp2 = new HealthPoints(2);
         addObject(background, 300, 300);
         addObject(flap,100,400);
-        addObject(hp,500,50);
+        addObject(hp0,510,50);
+        addObject(hp1,520,50);
+        addObject(hp2,530,50);
         //showText("ScorePts: "+ 3, 200, 22);
 
     }
@@ -27,7 +31,8 @@ public class flappysworld extends World
     }
 
     public void act(){
-        
+        showText("ScoreHea: "+ getObjects(flappybird.class).get(0).getHealth(), 200, 22);
+        HealthPoints.setImg();
         
         
     }
