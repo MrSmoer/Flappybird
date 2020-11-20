@@ -1,7 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class flappysworld extends World
 {
-    
+    HealthPoints hp0 = new HealthPoints(0);
+        HealthPoints hp1 = new HealthPoints(1);
+        HealthPoints hp2 = new HealthPoints(2);
     public void main(){
 
         //Gameover game = new Gameover(); 
@@ -32,7 +34,7 @@ public class flappysworld extends World
 
     public void act(){
         showText("ScoreHea: "+ getObjects(flappybird.class).get(0).getHealth(), 200, 22);
-        HealthPoints.setImg();
+        hp0.setImg();
         
         
     }

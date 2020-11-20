@@ -18,6 +18,7 @@ public class flappybird extends Actor
     int spawnAbstand=50;
     int spawncount=0;
     public static int score=0;
+    //sdasdasd
     public flappybird(){//Konstruktor, beim erzeugen ausgeführt
         
     }
