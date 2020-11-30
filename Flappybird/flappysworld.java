@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-public class main extends World
+public class flappysworld extends World
 {
         HealthPoints hp0 = new HealthPoints(0);
         HealthPoints hp1 = new HealthPoints(1);

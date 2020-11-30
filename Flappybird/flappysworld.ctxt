@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=flappysworld
+comment1.params=
+comment1.target=void\ main()
+comment2.params=
+comment2.target=flappysworld()
+comment3.params=
+comment3.target=void\ act()
+comment4.params=id
+comment4.target=HealthPoints\ getHealthPoints(int)
+numComments=5
