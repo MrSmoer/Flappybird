@@ -6,4 +6,6 @@ comment2.params=
 comment2.target=flappysworld()
 comment3.params=
 comment3.target=void\ act()
-numComments=4
+comment4.params=id
+comment4.target=HealthPoints\ getHealthPoints(int)
+numComments=5

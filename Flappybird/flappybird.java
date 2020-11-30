@@ -9,7 +9,7 @@ public class flappybird extends Actor
     int sStart = 0;
     int v0 = -12;
     int spwnbckgrnd=0;
-    int health = 8;
+    int health = 9;
     int invincibleCount = 0;
     boolean fallend=false;
     boolean fallendStart=true;
@@ -18,10 +18,14 @@ public class flappybird extends Actor
     int spawnAbstand=50;
     int spawncount=0;
     public static int score=0;
+    /*HealthPoints hp0 = null;
+    HealthPoints hp1 = null;
+    HealthPoints hp2 = null;*/
     //sdasdasd
     public flappybird(){//Konstruktor, beim erzeugen ausgeführt
-        
+
     }
+
     public void act() 
     {
         jump();
@@ -32,21 +36,27 @@ public class flappybird extends Actor
         checkHealth();
         //testtetsd
     } 
+
     public void count(){
         takt++;
-        System.out.println(takt);
+       // System.out.println(takt);
     }
+
     public int getHealth(){
         return health;
     }
+
     public void checkHealth(){
         //RöhrenBerührung
-        
+
         if(isTouching(HindernisUnten.class)||isTouching(HindernisOben.class)||(getY()>600||getY()<0)){//Gameover Abfrage
             //System.out.println("Game over");
             //getWorld().stop();
             //HealthPoints.setImg();
             //System.out.println(health+"asd");
+            HealthPoints hp0 = ((flappysworld)getWorld()).getHealthPoints(0);
+            HealthPoints hp1 = ((flappysworld)getWorld()).getHealthPoints(1);
+            HealthPoints hp2 = ((flappysworld)getWorld()).getHealthPoints(2);
             if(invincible){
                 invincibleCount++;
                 if(invincibleCount>=20){
@@ -55,16 +65,22 @@ public class flappybird extends Actor
                 }
             }else {
                 health--;
+                if(health!=0){
+                    hp0.setImg(health);
+                    hp1.setImg(health);
+                    hp2.setImg(health);
+                }
+
                 invincible = true;
+
             }
-            
 
         } 
         if(health<=0){
-           Greenfoot.setWorld(new flappysworld());
-           score=0;
+            Greenfoot.setWorld(new flappysworld());
+            score=0;
         }
-        
+
     }
     //Zeigt Score an
     public void score(){

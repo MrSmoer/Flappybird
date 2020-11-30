@@ -2,6 +2,7 @@
 comment0.target=flappybird
 comment1.params=
 comment1.target=flappybird()
+comment1.text=HealthPoints\ hp0\ \=\ null;\r\n\ \ \ \ HealthPoints\ hp1\ \=\ null;\r\nHealthPoints\ hp2\ \=\ null;
 comment2.params=
 comment2.target=void\ act()
 comment3.params=
