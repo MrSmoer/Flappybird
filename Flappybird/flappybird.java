@@ -9,7 +9,7 @@ public class flappybird extends Actor
     int sStart = 0;
     int v0 = -12;
     int spwnbckgrnd=0;
-    int health = 9;
+    int health = 6;
     int invincibleCount = 0;
     boolean fallend=false;
     boolean fallendStart=true;

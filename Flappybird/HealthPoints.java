@@ -21,51 +21,48 @@ public class HealthPoints extends Actor
 
     public void setImg(int health){
         //System.out.println("Meine id: " + id);
-        importantValue=health;
+        importantValue=health-(2*id);
         //System.out.println("Important value "+importantValue);
-        System.out.println(health);
+        //System.out.println("my ID: "+importantValue+" healt: "+ health);
         switch(health){
             case 1:
             case 2:
-            case 3:
-            if(id==2){
+            if(id==0){
                 active=true;
             }else active=false;
             break;
 
+            case 3:
             case 4:
-            case 5:
-            case 6:
             if(id==1){
                 active=true;
             }else active=false;
             break;
 
-            case 7:
-            case 8:
-            case 9:
-            if(id==0){
+            case 5:
+            case 6:
+            if(id==2){
                 active=true;
             }else active=false;
             break;
 
         }
         if(active){
-            System.out.println("Meine id: " + id);
-            System.out.println("Important value "+importantValue);
+            System.out.println(" ");
             if(importantValue==1){
-                System.out.println("Ich zeige: 1");
+                System.out.println(id+" Ich zeige: 1");
             }
             if(importantValue==2){
-                System.out.println("Ich zeige: 2");
+                System.out.println(id+" Ich zeige: 2");
             }
             if(importantValue==3){
-                System.out.println("Ich zeige: 3");
+                System.out.println(id+" Ich zeige: 3");
             }
             System.out.println(" ");
-        }
+        }else ;//System.out.println(id+"zeigt"+importantValue);
 
     }
+
     public void act(){
         //System.out.println("asd");
         //System.out.println(flappybird.health);
