@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class flappybird extends Actor
 {
-    double a=1.3;
+    double a=1.2;
     int takt=0;
     int tFallStart=0;
     int tFall=0;
