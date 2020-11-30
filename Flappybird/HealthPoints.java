@@ -60,7 +60,7 @@ public class HealthPoints extends Actor
                 //System.out.println(id+" Ich zeige: 2");
                 setImage(half);
             }
-            System.out.println(" ");
+            //System.out.println(" ");
         }else ;//System.out.println(id+"zeigt"+importantValue);
 
     }
