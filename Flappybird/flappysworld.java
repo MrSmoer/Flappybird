@@ -1,4 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
 public class flappysworld extends World
 {
         HealthPoints hp0 = new HealthPoints(0);
@@ -8,7 +9,9 @@ public class flappysworld extends World
 
         //Gameover game = new Gameover(); 
         bckgrnd background = new bckgrnd();
-        flappybird flap = new flappybird(); 
+        flappybird flap = new flappybird();
+        
+        
         /*HealthPoints hp0 = new HealthPoints(0);
         HealthPoints hp1 = new HealthPoints(1);
         HealthPoints hp2 = new HealthPoints(2);*/
